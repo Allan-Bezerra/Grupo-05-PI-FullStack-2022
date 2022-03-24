@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: #356859;
+    width: 100vw;
+}
+
+body{
+    height: 80vh;
+}
+
+footer{
+    height: 20vh;
+}
+
+/* LINHA AJUDA AO CLINETE */
+
+.header-help{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.phone{
+    display: flex;
+    color: #ffffff;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-help{
+    display: flex;
+    background-color: #FD5523;
+    color: #ffffff;
+    border: 1px solid #356859;
+    font-size: 18px;
+    padding: 2px;
+    align-content: center;
+}
+
+/* LOGO / SEARCH / LOGIN / CRIAR CONTA */
+
+.menu-search{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+    padding: 0 60px;
+}
+
+#logo{
+    display: flex;
+    height: 55px;
+    width: 90px;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#login, #login-1, #login-2{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-text, #text-menu-bar, #menu-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.icon-user, .icon-sacola, .icon-menu{
+    display: flex;
+    width: 42px;
+    height: 45px;
+    gap: 10px;
+}
+
+.icon-user{
+    width: 40px;
+    height: 38px;
+    padding: 3px;
+}
+
+/* MENU BAR*/
+
+.menu-bar{
+    display: flex;
+    background-color: #37966F;
+    color: #ffffff;
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    display: flex;
+    align-items: center;
+}
+#menu-central-text{
+    display: flex;
+    font-size: 18px;
+    gap: 50px
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+/* BOX HOME*/
+
+section{
+    background-color: #F5F4F4 ;
+}
+
+.box-home{
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+/* BOX CATEGORIA*/
+
+.box-categoria{
+    display: flex;
+    border: 1px solid lightgrey;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.icon-box-categoria{
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+.text-box-categoria, span{
+    display: flex;
+    align-items: center;
+}
+
+/* BOX PRODT*/
+
+.box-prod-home{
+    border: 1px black solid;
+    display: flex;
+
+}
+
+.box-prod{
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+    gap: 10px;
+    border: 1px red solid;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.descricao{
+
+    color: lightslategray;
+}
+.autor{
+    font-size: 20px;
+}
+
+.titulo{
+    font-size: 25px;
+    color: black;
+}
+
+
+/* FOOTER */
+
+.line-first{
+    background-color: #F5F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.text-box-footer{
+    font-size: 20px;
+
+}
+
+.line-second{
+    background-color: #37966F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-first, .column-second, .column-third, .column-pag{
+    display: flex;
+    flex-direction: column;
+}
+
+.line-third{
+    background-color: #356859;
+    display: flex;
+    justify-content: center;
+}
