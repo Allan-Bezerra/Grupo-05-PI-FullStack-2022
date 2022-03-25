@@ -116,18 +116,58 @@ span{
     gap: 20px;
 }
 
-/* BOX HOME*/
+/* SECTION*/
 
 section{
     background-color: #F5F4F4 ;
 }
 
-.box-home{
-    font-size: 30px;
-    padding: 10px 10px;
+/* FORM*/
+.box-newsletter{
+    display: flex;
+    border: lightgrey 1px solid;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* BOX CATEGORIA*/
+.titulo{
+    font-size: 42px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+.dados-newsletter{
+
+    display: flex;
+    border: lightgray 1px solid;
+    background-color: #ffffff;
+    justify-content: center;
+    padding: 40px 40px;
+    margin-bottom: 40px;
+}
+
+.input-padrao{
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.input-email{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-cadastrar{
+    display: flex;
+    justify-content: center;
+    background-color: #37966F;
+    color: #ffffff;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: 180px;
+}
+/* CATEGORIA ENTREGAMOS/PARCELE/TELEFONE*/
 
 .box-categoria{
     display: flex;
@@ -144,38 +184,6 @@ section{
 .text-box-categoria, span{
     display: flex;
     align-items: center;
-}
-
-/* BOX PRODT*/
-
-.box-prod-home{
-    border: 1px black solid;
-    display: flex;
-
-}
-
-.box-prod{
-    display: flex;
-    background-color: #ffffff;
-    padding: 10px;
-    gap: 10px;
-    border: 1px red solid;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.descricao{
-
-    color: lightslategray;
-}
-.autor{
-    font-size: 20px;
-}
-
-.titulo{
-    font-size: 25px;
-    color: black;
 }
 
 
