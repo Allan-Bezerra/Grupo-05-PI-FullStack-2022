@@ -63,6 +63,14 @@ footer{
     width: 100%;
 }
 
+.btn-busca{
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
 #login, #login-1, #login-2{
     display: flex;
     padding: 10px;
