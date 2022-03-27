@@ -126,6 +126,8 @@ span{
     gap: 20px;
 }
 
+/* PAGINA HOME */
+
 /* BOX HOME*/
 
 section{
@@ -188,6 +190,278 @@ section{
     color: black;
 }
 
+/* FIM */
+
+/* PÁGINA PRODUTO */
+
+/* SECTION*/
+
+section {
+    background-color: #F5F4F4;
+}
+
+/* DESCRICAO PRODUTO*/
+
+    /*-- LINE 1 - HISTORICO DE NAVEGAÇÃO*/
+
+    .historico{
+        text-align: left;
+        margin: 10px 50px;
+        font-size: 18px;
+    }
+
+    /*-- LINE 2 - DESCRICAO PRODUTO*/
+    .description{
+       border: lightcoral 4px solid;
+        display: flex;
+       justify-content: space-around;
+
+
+    }
+    .photo-left{
+        display: flex;
+        flex-direction: column;
+        border: #FD5523 2px solid;
+
+
+    }
+    .left{
+       
+        width: 100px;
+        height: 120px;
+        border: black 3px solid;
+    }
+
+    .photo-principal{
+       border: #23fd35 2px solid;
+       display: flex;
+       justify-content: center;
+    }
+
+    .description-book{
+        font-size: 23px;
+        border: black solid 5px;
+        margin: 10px 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .author, .produt-name{
+        text-align: left;
+    }
+
+    .author{
+        color: #818181;
+    }
+
+    .price-1{
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .buy, .add-carrinho{
+
+        border-radius: 15px;
+
+    }
+
+    .buy{
+        background-color: #FD5523;
+        color: white;
+        font-size: 16px;
+        line-height: 42px;
+        width: 120px;
+    }
+
+    .add-carrinho{
+        background-color: #356859;
+        color: white;
+        font-size: 16px;
+        line-height: 42px;
+        width: 400px;
+    }
+
+    .compartilhar{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* LINE 3 - DESCRICAO PRODUTO - 2 */
+
+    .details{
+        border: #23fd35 solid 3px;
+    }
+    
+    .details-description{
+        border: black 5px solid;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .item-details{
+        border: 1px solid lightpink;
+        padding: 2px 32px;
+    }
+
+    /*LINE 4 - SUGESTÃO DE LIVRO */
+
+    .box-sugestao{
+        border: yellowgreen 3px solid;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 40px 0px;
+
+    }
+
+    .box-prod{
+        background-color: #F5F4F4;
+        border: #FD5523 3px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .box-like{
+        font-size: 26px;
+        margin: 0 50px;
+        padding: 30px 0 ;
+
+    }
+
+
+/* FIM */
+
+/* PAG NEWSLETTER - FORM */
+
+/* FORM*/
+.box-newsletter{
+    display: flex;
+    border: lightgrey 1px solid;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 42px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+.dados-newsletter{
+
+    display: flex;
+    border: lightgray 1px solid;
+    background-color: #ffffff;
+    justify-content: center;
+    padding: 40px 40px;
+    margin-bottom: 40px;
+}
+
+.input-padrao{
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.input-email{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-cadastrar{
+    display: flex;
+    justify-content: center;
+    background-color: #37966F;
+    color: #ffffff;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: 180px;
+}
+
+/* FIM */
+
+/* PAGIINA LOGIN */
+
+/* FORM LOGIN - LINE 1*/
+.box-login {
+    display: flex;
+    border: lightgrey 1px solid;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.login {
+
+    display: flex;
+    border: lightgray 1px solid;
+    background-color: #ffffff;
+    justify-content: center;
+    padding: 40px 40px;
+    margin-bottom: 40px;
+}
+
+.titulo-form{
+    font-size: 22px;
+}
+
+.input-text {
+    font-size: 22px;
+}
+
+.input-email {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.btn-entrar {
+    background-color: #37966F;
+    color: #ffffff;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: 250px;
+}
+
+.input-esqueceu-1 {
+
+    font-size: 17px;
+    font-style: oblique;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+/* FORM CADASTRE-SE - LINE 2*/
+
+.input-esqueceu{
+    font-size: 22px;
+    font-style: initial;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-cadastre-se {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #FD5523;
+    color: #ffffff;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: 250px;
+
+}
+
+/* FIM */
 
 /* FOOTER */
 
