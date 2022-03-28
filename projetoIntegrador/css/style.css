@@ -102,6 +102,7 @@ footer{
     padding: 3px;
 }
 
+
 /* MENU BAR*/
 
 .menu-bar{
@@ -125,6 +126,41 @@ span{
     display: flex;
     gap: 20px;
 }
+
+/* -------------------------- TESTE JOHNNY  
+
+/* #btn-mobile{
+    display: block;
+}
+
+@media (max-width: 600px){
+    #btn-mobile{
+        display: block;
+    }
+    #menu-central-text{
+    
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #e7e7e7;
+        height: calc(100vh - 70px);
+        z-index: 10;
+        
+    }
+
+    .menuCentral.active, #menu-central-text{
+        display: block;
+    }
+
+    #menu-central-text{
+
+    }
+
+} 
+
+FIM DO  TESTE JOHNNY ---------------------- */
 
 /* PAGINA HOME */
 
