@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <!--Googlr Analytics-->
     <!--JavaScript-->
     <!--Facebook Pixel Code-->
     <!---->
-    <title>Livraria do Martin</title> <!--PÁGINA HOME E DESTAQUES SÃO A MESMA PÁGINA-->
+    <title>Livraria do Martin</title>
+    <!--PÁGINA HOME E DESTAQUES SÃO A MESMA PÁGINA-->
 </head>
 
 <body>
@@ -34,7 +35,8 @@
                 </div>
                 <!-- BTN BUSCA-->
                 <div id="search">
-                    <input type="text" id="search-header" name="search" class="btn-busca" placeholder="Buscar produto..." />
+                    <input type="text" id="search-header" name="search" class="btn-busca"
+                        placeholder="Buscar produto..." />
                 </div>
                 <!-- LOGIN-->
                 <div id="login">
@@ -56,36 +58,43 @@
                     </div>
                 </div>
             </div>
-            
-            <nav>
-                    <!-- MENU HAMBURGER-->
-                <div class="menu-bar">
-                    <div class="icon-menu">
-                        <img src="./img/menu.png" alt="" sizes="" srcset="">
-                        <div id="menu-text"></div>
-                        <span>CATEGORIA</span> <!-- criar uma class-->
+            <nav id="geral">
+                <!-- MENU HAMBURGER-->
+                <div class="menu-hb">
+                    <nav id="nav">
+                        <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                            aria-expanded="false">CATEGORIA
+                            <span id="hamburger"></span>
+                        </button>
+                        <ul id="menu" role="menu">
+                            <li><a href="/">Sobre</a></li>
+                            <li><a href="/">Produto</a></li>
+                            <li><a href="/">Potifolio</a></li>
+                            <li><a href="/">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- MENU CENTRAL-->
+                <div class="menu-central">
+                    <div id="menu-central-text">
+                        <span>DESTAQUE</span>
+                        <span>MAIS VENDIDOS</span>
+                        <span>AUTORES</span>
+                        <span>EDITORES</span>
+                        <span>NOVIDADES</span>
                     </div>
-                    <!-- MENU CENTRAL-->
-                    <div class="menu-central">
-                        <button id="btn-mobile">Menu</button>
-                        <div id="menu-central-text">
-                            <span>DESTAQUE</span>
-                            <span>MAIS VENDIDOS</span>
-                            <span>AUTORES</span>
-                            <span>EDITORES</span>
-                            <span>NOVIDADES</span>
-                        </div>
-                    </div>
-                    <!-- REDE SOCIAL-->
-                    <div class="social-media">
-                        <div class="icon-menu-facebook">FACEBOOK</div>
-                        <div class="icon-menu-facebook">INSTAGRAM</div>
-                        <div class="icon-menu-facebook">TWITTER</div>
-                    </div>
+                </div>
+                <!-- REDE SOCIAL-->
+                <div class="social-media">
+                    <div class="icon-menu-facebook">FACEBOOK</div>
+                    <div class="icon-menu-facebook">INSTAGRAM</div>
+                    <div class="icon-menu-facebook">TWITTER</div>
+                </div>
 
             </nav>
-            
+
         </header>
+        <script src="./script.js"></script>
         <!-- BANNER-->
         <section>
             <div class="first-banner">

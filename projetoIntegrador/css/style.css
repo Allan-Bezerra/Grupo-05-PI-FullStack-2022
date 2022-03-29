@@ -1,29 +1,30 @@
-*{
+* {
     margin: 0;
 }
 
-header{
+header {
     background-color: #356859;
     width: 100vw;
 }
 
-body{
+body {
     height: 80vh;
 }
 
-footer{
+footer {
     height: 20vh;
 }
 
 /* LINHA AJUDA AO CLINETE */
 
-.header-help{
+.header-help {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px 10px;
 }
-.phone{
+
+.phone {
     display: flex;
     color: #ffffff;
     gap: 10px;
@@ -31,7 +32,7 @@ footer{
     justify-content: center;
 }
 
-.btn-help{
+.btn-help {
     display: flex;
     background-color: #FD5523;
     color: #ffffff;
@@ -43,7 +44,7 @@ footer{
 
 /* LOGO / SEARCH / LOGIN / CRIAR CONTA */
 
-.menu-search{
+.menu-search {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
@@ -51,19 +52,19 @@ footer{
     padding: 0 60px;
 }
 
-#logo{
+#logo {
     display: flex;
     height: 55px;
     width: 90px;
 }
 
-#search{
+#search {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.btn-busca{
+.btn-busca {
     width: 600px;
     height: 40px;
     border-radius: 20px;
@@ -73,14 +74,18 @@ footer{
     line-height: 63px;
 }
 
-#login, #login-1, #login-2{
+#login,
+#login-1,
+#login-2 {
     display: flex;
     padding: 10px;
     justify-content: center;
     align-items: center;
 }
 
-#login-text, #text-menu-bar, #menu-text{
+#login-text,
+#text-menu-bar,
+#menu-text {
     display: flex;
     flex-direction: column;
     gap: 10px 10px;
@@ -89,14 +94,16 @@ footer{
     font-size: 16px;
 }
 
-.icon-user, .icon-sacola, .icon-menu{
+.icon-user,
+.icon-sacola,
+.icon-menu {
     display: flex;
     width: 42px;
     height: 45px;
     gap: 10px;
 }
 
-.icon-user{
+.icon-user {
     width: 40px;
     height: 38px;
     padding: 3px;
@@ -105,7 +112,7 @@ footer{
 
 /* MENU BAR*/
 
-.menu-bar{
+#geral {
     display: flex;
     background-color: #37966F;
     color: #ffffff;
@@ -113,20 +120,114 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-span{
+
+span {
     display: flex;
     align-items: center;
 }
-#menu-central-text{
+
+#menu-central-text {
     display: flex;
     font-size: 18px;
     gap: 50px
 }
-.social-media{
+
+.social-media {
     display: flex;
     gap: 20px;
 }
 
+/* MENU HAMBURGER*/
+a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+a:hover{
+    background-color: transparent;
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+ @media (max-width: 600px) {
+    }
+    #menu {
+      display: block;
+      position: absolute;
+      width: 20%;
+      top: 15%;
+      left: 0;
+      background: lightgreen;
+      transition: 0.3s;
+      z-index: 1000;
+      height: 0;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        display: flex;
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 2px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(165deg);
+      }
+
+      #nav.active #hamburger::after {
+        transform: rotate(-165deg);
+        top: -6px;
+      } 
 /* -------------------------- TESTE JOHNNY  
 
 /* #btn-mobile{
@@ -166,43 +267,46 @@ FIM DO  TESTE JOHNNY ---------------------- */
 
 /* BOX HOME*/
 
-section{
-    background-color: #F5F4F4 ;
+section {
+    background-color: #F5F4F4;
 }
 
-.box-home{
+.box-home {
     font-size: 30px;
     padding: 10px 10px;
 }
 
 /* BOX CATEGORIA*/
 
-.box-categoria{
+.box-categoria {
     display: flex;
     border: 1px solid lightgrey;
     flex-direction: column;
     justify-content: space-around;
 
 }
-.icon-box-categoria{
+
+.icon-box-categoria {
     display: flex;
     width: 40px;
     height: 40px;
 }
-.text-box-categoria, span{
+
+.text-box-categoria,
+span {
     display: flex;
     align-items: center;
 }
 
 /* BOX PRODT*/
 
-.box-prod-home{
+.box-prod-home {
     border: 1px black solid;
     display: flex;
 
 }
 
-.box-prod{
+.box-prod {
     display: flex;
     background-color: #ffffff;
     padding: 10px;
@@ -213,15 +317,16 @@ section{
 
 }
 
-.descricao{
+.descricao {
 
     color: lightslategray;
 }
-.autor{
+
+.autor {
     font-size: 20px;
 }
 
-.titulo{
+.titulo {
     font-size: 25px;
     color: black;
 }
@@ -238,134 +343,138 @@ section {
 
 /* DESCRICAO PRODUTO*/
 
-    /*-- LINE 1 - HISTORICO DE NAVEGAÇÃO*/
+/*-- LINE 1 - HISTORICO DE NAVEGAÇÃO*/
 
-    .historico{
-        text-align: left;
-        margin: 10px 50px;
-        font-size: 18px;
-    }
+.historico {
+    text-align: left;
+    margin: 10px 50px;
+    font-size: 18px;
+}
 
-    /*-- LINE 2 - DESCRICAO PRODUTO*/
-    .description{
-       border: lightcoral 4px solid;
-        display: flex;
-       justify-content: space-around;
-
-
-    }
-    .photo-left{
-        display: flex;
-        flex-direction: column;
-        border: #FD5523 2px solid;
+/*-- LINE 2 - DESCRICAO PRODUTO*/
+.description {
+    border: lightcoral 4px solid;
+    display: flex;
+    justify-content: space-around;
 
 
-    }
-    .left{
-       
-        width: 100px;
-        height: 120px;
-        border: black 3px solid;
-    }
+}
 
-    .photo-principal{
-       border: #23fd35 2px solid;
-       display: flex;
-       justify-content: center;
-    }
+.photo-left {
+    display: flex;
+    flex-direction: column;
+    border: #FD5523 2px solid;
 
-    .description-book{
-        font-size: 23px;
-        border: black solid 5px;
-        margin: 10px 40px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
 
-    .author, .produt-name{
-        text-align: left;
-    }
+}
 
-    .author{
-        color: #818181;
-    }
+.left {
 
-    .price-1{
-        padding-top: 20px;
-        text-align: left;
-    }
+    width: 100px;
+    height: 120px;
+    border: black 3px solid;
+}
 
-    .buy, .add-carrinho{
+.photo-principal {
+    border: #23fd35 2px solid;
+    display: flex;
+    justify-content: center;
+}
 
-        border-radius: 15px;
+.description-book {
+    font-size: 23px;
+    border: black solid 5px;
+    margin: 10px 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
-    }
+.author,
+.produt-name {
+    text-align: left;
+}
 
-    .buy{
-        background-color: #FD5523;
-        color: white;
-        font-size: 16px;
-        line-height: 42px;
-        width: 120px;
-    }
+.author {
+    color: #818181;
+}
 
-    .add-carrinho{
-        background-color: #356859;
-        color: white;
-        font-size: 16px;
-        line-height: 42px;
-        width: 400px;
-    }
+.price-1 {
+    padding-top: 20px;
+    text-align: left;
+}
 
-    .compartilhar{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+.buy,
+.add-carrinho {
 
-    /* LINE 3 - DESCRICAO PRODUTO - 2 */
+    border-radius: 15px;
 
-    .details{
-        border: #23fd35 solid 3px;
-    }
-    
-    .details-description{
-        border: black 5px solid;
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    
-    .item-details{
-        border: 1px solid lightpink;
-        padding: 2px 32px;
-    }
+}
 
-    /*LINE 4 - SUGESTÃO DE LIVRO */
+.buy {
+    background-color: #FD5523;
+    color: white;
+    font-size: 16px;
+    line-height: 42px;
+    width: 120px;
+}
 
-    .box-sugestao{
-        border: yellowgreen 3px solid;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        padding: 40px 0px;
+.add-carrinho {
+    background-color: #356859;
+    color: white;
+    font-size: 16px;
+    line-height: 42px;
+    width: 400px;
+}
 
-    }
+.compartilhar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
-    .box-prod{
-        background-color: #F5F4F4;
-        border: #FD5523 3px solid;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+/* LINE 3 - DESCRICAO PRODUTO - 2 */
 
-    }
+.details {
+    border: #23fd35 solid 3px;
+}
 
-    .box-like{
-        font-size: 26px;
-        margin: 0 50px;
-        padding: 30px 0 ;
+.details-description {
+    border: black 5px solid;
+    display: flex;
+    justify-content: space-between;
 
-    }
+}
+
+.item-details {
+    border: 1px solid lightpink;
+    padding: 2px 32px;
+}
+
+/*LINE 4 - SUGESTÃO DE LIVRO */
+
+.box-sugestao {
+    border: yellowgreen 3px solid;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+
+}
+
+.box-prod {
+    background-color: #F5F4F4;
+    border: #FD5523 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box-like {
+    font-size: 26px;
+    margin: 0 50px;
+    padding: 30px 0;
+
+}
 
 
 /* FIM */
@@ -373,21 +482,21 @@ section {
 /* PAG NEWSLETTER - FORM */
 
 /* FORM*/
-.box-newsletter{
+.box-newsletter {
     display: flex;
     border: lightgrey 1px solid;
     flex-direction: column;
     align-items: center;
 }
 
-.titulo{
+.titulo {
     font-size: 42px;
     margin-bottom: 30px;
     margin-top: 10px;
 
 }
 
-.dados-newsletter{
+.dados-newsletter {
 
     display: flex;
     border: lightgray 1px solid;
@@ -397,18 +506,18 @@ section {
     margin-bottom: 40px;
 }
 
-.input-padrao{
+.input-padrao {
     width: 40px;
     margin-bottom: 20px;
 }
 
-.input-email{
+.input-email {
     width: 300px;
     height: 30px;
     margin-bottom: 20px;
 }
 
-.btn-cadastrar{
+.btn-cadastrar {
     display: flex;
     justify-content: center;
     background-color: #37966F;
@@ -443,7 +552,7 @@ section {
     margin-bottom: 40px;
 }
 
-.titulo-form{
+.titulo-form {
     font-size: 22px;
 }
 
@@ -478,7 +587,7 @@ section {
 
 /* FORM CADASTRE-SE - LINE 2*/
 
-.input-esqueceu{
+.input-esqueceu {
     font-size: 22px;
     font-style: initial;
     text-align: center;
@@ -501,7 +610,7 @@ section {
 
 /* FOOTER */
 
-.line-first{
+.line-first {
     background-color: #F5F4F4;
     display: flex;
     justify-content: center;
@@ -510,25 +619,28 @@ section {
     padding-top: 20px;
 }
 
-.text-box-footer{
+.text-box-footer {
     font-size: 20px;
 
 }
 
-.line-second{
+.line-second {
     background-color: #37966F;
     display: flex;
     justify-content: space-between;
-    padding: 10px 120px 10px 10px ;
+    padding: 10px 120px 10px 10px;
 }
 
-.column-first, .column-second, .column-third, .column-pag{
+.column-first,
+.column-second,
+.column-third,
+.column-pag {
     display: flex;
     flex-direction: column;
     padding: 0 170px;
 }
 
-.line-third{
+.line-third {
     background-color: #356859;
     display: flex;
     justify-content: center;
