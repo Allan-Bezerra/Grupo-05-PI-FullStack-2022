@@ -115,8 +115,10 @@ footer {
 #geral {
     display: flex;
     background-color: #37966F;
+    height: 5vh;
     color: #ffffff;
-    padding: 0 60px;
+    font-family: sans-serif;
+    padding: 0 80px;
     justify-content: space-between;
     align-items: center;
 }
@@ -137,7 +139,10 @@ span {
     gap: 20px;
 }
 
+/* -------------------------- TESTE JOHNNY  
+
 /* MENU HAMBURGER*/
+
 a{
     color: black;
     text-decoration: none;
@@ -147,6 +152,12 @@ a:hover{
     background-color: transparent;
 }
 
+.text-hb{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+
+}
 
 #menu {
     display: flex;
@@ -171,7 +182,7 @@ a:hover{
       display: block;
       position: absolute;
       width: 20%;
-      top: 15%;
+      top: 17%;
       left: 0;
       background: lightgreen;
       transition: 0.3s;
@@ -200,10 +211,10 @@ a:hover{
         border: none;
         background: none;
         cursor: pointer;
-        gap: 0.5rem;
+        gap: 1rem;
       }
       #hamburger {
-        border-top: 2px solid;
+        border-top: 3px solid;
         width: 20px;
       }
       #hamburger::after,
@@ -213,55 +224,23 @@ a:hover{
         width: 20px;
         height: 2px;
         background: currentColor;
-        margin-top: 2px;
+        margin-top: 5px;
         transition: 0.3s;
         position: relative;
       }
       #nav.active #hamburger {
-        border-top-color: transparent;
+        border-top-color: blue;
       }
       #nav.active #hamburger::before {
-        transform: rotate(165deg);
+        transform: rotate(134deg);
       }
 
       #nav.active #hamburger::after {
-        transform: rotate(-165deg);
-        top: -6px;
+        transform: rotate(-135deg);
+        top: -7deg;
+        
       } 
 /* -------------------------- TESTE JOHNNY  
-
-/* #btn-mobile{
-    display: block;
-}
-
-@media (max-width: 600px){
-    #btn-mobile{
-        display: block;
-    }
-    #menu-central-text{
-    
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background-color: #e7e7e7;
-        height: calc(100vh - 70px);
-        z-index: 10;
-        
-    }
-
-    .menuCentral.active, #menu-central-text{
-        display: block;
-    }
-
-    #menu-central-text{
-
-    }
-
-} 
-
-FIM DO  TESTE JOHNNY ---------------------- */
 
 /* PAGINA HOME */
 
