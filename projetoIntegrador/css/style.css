@@ -142,7 +142,7 @@ span {
 /* -------------------------- TESTE JOHNNY  
 
 /* MENU HAMBURGER*/
-
+/*
 a{
     color: black;
     text-decoration: none;
@@ -241,6 +241,8 @@ a:hover{
         
       } 
 /* -------------------------- TESTE JOHNNY  
+
+
 
 /* PAGINA HOME */
 
@@ -624,3 +626,104 @@ section {
     display: flex;
     justify-content: center;
 }
+
+
+/*Menu Vertical - Dropdown (Teste)*/
+/*Toda a Página*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /*Corpo*/
+  body{
+    min-height: 100vh;
+    background: #356859;
+    
+  }
+  
+  /*Barra vertical (Menu onde está o "x". Barra onde está os nomes (CATEGORIAS ATÉ QUEM SOMOS*/
+  .side-bar{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: right;
+  }
+  
+  /*Menu vertical - deslocamento*/
+  .side-bar.active{
+    left: 0;
+  }
+  /*Altera a distancias - Elementos Menu Vertical*/
+  .side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+  }
+  /*Quando você acessa a área do Menu Vertical - Transforma a seta em "mãozinha"*/
+  .side-bar .menu .item{
+    position:relative;
+    cursor:pointer;
+  }
+  /*Itens do Menu Vertical - Por exeplo cor da letra!*/
+  .side-bar .menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+  }
+  /*Ao passar o "cursor" nos itens do Menu Vertical*/
+  .side-bar .menu .item a:hover{
+    background: #356859;
+    transition: 0.3s ease;
+  
+  }
+  
+  /*"Regula a posição" da seta no Menu Vertical*/
+  .side-bar .menu .item a .dropdown{
+  
+    position: absolute;
+    right:0;
+    margin: 20px;
+    transition: 0.3s ease;
+  }
+  /*Sub-menu do Menu Vertical*/
+  .side-bar .menu .item .sub-menu{
+    background: rgba(158, 118, 121, 0.1);
+    display:none;
+  }
+  /*Posicionamento do item Sub-menu*/
+  .side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+  }
+  /* O quanto a seta do Menu Vertical tem que girar para "Baixo" ao acessar o Sub-menu*/
+  .rotate{
+    transform: rotate(90deg);
+  }
+  /*Posicionamento do Botão "X"*/
+  .close-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+  }
+  
+  /*Posicionamento do Botão Hamburguer*/
+  .menu-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    margin: 25px;
+    cursor:pointer;
+  }

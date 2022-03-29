@@ -1,4 +1,4 @@
-const btnMobile = document.getElementById('btn-mobile');
+/*const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
@@ -14,4 +14,25 @@ function toggleMenu(event) {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);*/
+
+type="text/javascript">
+        $(document).ready(function(){
+//Animação da ">" seta menu!
+          $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+//Animação Menu Hamburguer (Voltar para "X")
+          $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+          });
+//Animação Menu "X" (Voltar para Menu Hamburguer)
+          $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+          });
+
+
+        });
