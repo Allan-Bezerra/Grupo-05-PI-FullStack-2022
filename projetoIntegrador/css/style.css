@@ -1,118 +1,121 @@
 * {
     margin: 0;
-}
-
-header {
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    header {
     background-color: #356859;
     width: 100vw;
-}
-
-body {
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
     height: 80vh;
-}
-
-footer {
-    height: 20vh;
-}
-
-/* LINHA AJUDA AO CLINETE */
-
-.header-help {
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    
+    
+    /* LINHA AJUDA AO CLINETE --TESTE--*/
+    
+    .header-help {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px 10px;
-}
-
-.phone {
+    
+    }
+    
+    .phone {
     display: flex;
     color: #ffffff;
     gap: 10px;
     align-items: center;
     justify-content: center;
-}
-
-.btn-help {
+    }
+    
+    .btn-help {
     display: flex;
     background-color: #FD5523;
     color: #ffffff;
-    border: 1px solid #356859;
     font-size: 18px;
     padding: 2px;
     align-content: center;
-}
-
-/* LOGO / SEARCH / LOGIN / CRIAR CONTA */
-
-.menu-search {
+    }
+    
+    /* LOGO / SEARCH / LOGIN / CRIAR CONTA */
+    
+    .menu-search {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
     align-items: center;
     padding: 0 60px;
-}
-
-#logo {
+    }
+    
+    #logo {
     display: flex;
     height: 55px;
     width: 90px;
-}
-
-#search {
+    }
+    
+    #search {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-.btn-busca {
-    width: 600px;
-    height: 40px;
-    border-radius: 20px;
+    }
+    
+    .btn-busca {
+    width: 780px;
+    height: 55px;
+    border-radius: 13px;
     font-size: 18px;
     padding: 0 20px;
-    transition: 2s;
+    transition: 1.5s;
     line-height: 63px;
-}
-
-#login,
-#login-1,
-#login-2 {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-#login-text,
-#text-menu-bar,
-#menu-text {
+    }
+    
+    #login,
+    #login-1,
+    #login-2 {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    font-weight: bold;
+    gap: 10px 10px;
+    }
+    
+    #login-text,#login-text-1, #login-text-2,
+    #text-menu-bar,
+    #menu-text {
+    display: flex;
     gap: 10px 10px;
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
-}
-
-.icon-user,
-.icon-sacola,
-.icon-menu {
+    font-size: 14px;
+    padding: 10px 10px;
+    }
+    
+    .icon-user,
+    .icon-sacola,
+    .icon-menu {
     display: flex;
     width: 42px;
     height: 45px;
     gap: 10px;
-}
-
-.icon-user {
+    }
+    
+    .icon-user {
     width: 40px;
     height: 38px;
     padding: 3px;
-}
-
-
-/* MENU BAR*/
-
-#geral {
+    }
+    
+    
+    /* MENU BAR*/
+    
+    #geral {
     display: flex;
     background-color: #37966F;
     height: 5vh;
@@ -121,384 +124,388 @@ footer {
     padding: 0 80px;
     justify-content: space-between;
     align-items: center;
-}
-
-span {
+    }
+    
+    span {
     display: flex;
     align-items: center;
-}
-
-#menu-central-text {
+    }
+    
+    #menu-central-text, #menu-esquerda-text {
     display: flex;
     font-size: 18px;
     gap: 50px
-}
-
-.social-media {
+    }
+    
+    .social-media {
     display: flex;
     gap: 20px;
-}
-
-/* -------------------------- TESTE JOHNNY  
-
-/* MENU HAMBURGER*/
-/*
-a{
+    }
+    
+    /* -------------------------- TESTE JOHNNY 
+    
+    /* MENU HAMBURGER*/
+    /*
+    a{
     color: black;
     text-decoration: none;
     font-family: sans-serif;
-}
-a:hover{
+    }
+    a:hover{
     background-color: transparent;
-}
-
-.text-hb{
+    }
+    
+    .text-hb{
     font-family: sans-serif;
     font-size: 18px;
     color: white;
-
-}
-
-#menu {
+    
+    }
+    
+    #menu {
     display: flex;
     flex-direction: column;
     list-style: none;
     gap: 0.5rem;
     padding: 0.5rem;
-}
-
-#menu a{
+    }
+    
+    #menu a{
     display: block;
     padding: .5rem;
-}
-
-#btn-mobile{
+    }
+    
+    #btn-mobile{
     display: none;
-}
-
- @media (max-width: 600px) {
+    }
+    
+    @media (max-width: 600px) {
     }
     #menu {
-      display: block;
-      position: absolute;
-      width: 20%;
-      top: 17%;
-      left: 0;
-      background: lightgreen;
-      transition: 0.3s;
-      z-index: 1000;
-      height: 0;
-      visibility: hidden;
-      overflow-y: hidden;
+    display: block;
+    position: absolute;
+    width: 20%;
+    top: 17%;
+    left: 0;
+    background: lightgreen;
+    transition: 0.3s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
     }
-
+    
     #nav.active #menu {
-        display: flex;
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
+    display: flex;
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
     }
-
+    
     #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-      }
-      #btn-mobile {
-        display: flex;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: 1rem;
-      }
-      #hamburger {
-        border-top: 3px solid;
-        width: 20px;
-      }
-      #hamburger::after,
-      #hamburger::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: 0.3s;
-        position: relative;
-      }
-      #nav.active #hamburger {
-        border-top-color: blue;
-      }
-      #nav.active #hamburger::before {
-        transform: rotate(134deg);
-      }
-
-      #nav.active #hamburger::after {
-        transform: rotate(-135deg);
-        top: -7deg;
-        
-      } 
-/* -------------------------- TESTE JOHNNY  
-
-
-
-/* PAGINA HOME */
-
-/* BOX HOME*/
-
-section {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 1rem;
+    }
+    #hamburger {
+    border-top: 3px solid;
+    width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+    }
+    #nav.active #hamburger {
+    border-top-color: blue;
+    }
+    #nav.active #hamburger::before {
+    transform: rotate(134deg);
+    }
+    
+    #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7deg;
+    } 
+    /* -------------------------- TESTE JOHNNY 
+    
+    
+    
+    /* PAGINA HOME */
+    
+    /* BOX HOME*/
+    
+    section {
     background-color: #F5F4F4;
-}
-
-.box-home {
+    }
+    
+    .box-home {
     font-size: 30px;
     padding: 10px 10px;
-}
-
-/* BOX CATEGORIA*/
-
-.box-categoria {
     display: flex;
-    border: 1px solid lightgrey;
+    align-items: center;
+    }
+    
+    /* BOX CATEGORIA*/
+    
+    .box-categoria {
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
-}
-
-.icon-box-categoria {
+    align-items: flex-start;
+    
+    }
+    
+    .icon-box-categoria {
     display: flex;
     width: 40px;
     height: 40px;
-}
-
-.text-box-categoria,
-span {
+    
+    }
+    
+    .text-box-categoria,
+    span {
     display: flex;
     align-items: center;
-}
-
-/* BOX PRODT*/
-
-.box-prod-home {
-    border: 1px black solid;
+    gap: 1opx 10px
+    }
+    
+    /* BOX PRODT*/
+    
+    .box-prod-home {
     display: flex;
-
-}
-
-.box-prod {
+    
+    }
+    
+    .box-prod {
+    border: #e0dfdf 2px solid;
     display: flex;
     background-color: #ffffff;
     padding: 10px;
     gap: 10px;
-    border: 1px red solid;
     flex-direction: column;
     align-items: center;
-
-}
-
-.descricao {
-
-    color: lightslategray;
-}
-
-.autor {
-    font-size: 20px;
-}
-
-.titulo {
-    font-size: 25px;
-    color: black;
-}
-
-/* FIM */
-
-/* PÁGINA PRODUTO */
-
-/* SECTION*/
-
-section {
+    
+    }
+    
+    .descricao {
+    font-size: 16px;
+    color: rgb(213, 12, 166);
+    text-align: center;
+    }
+    
+    .autor {
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: oblique;
+    }
+    
+    .titulo {
+    color: rgb(0, 4, 0);
+    font-size: 18px;
+    }
+    
+    .btn-price{
+    font-size: 33px;
+    background-color: #FD5523;
+    font-weight: bolder;
+    text-align: center;
+    
+    }
+    
+    /* FIM */
+    
+    /* PÁGINA PRODUTO */
+    
+    /* SECTION*/
+    
+    section {
     background-color: #F5F4F4;
-}
-
-/* DESCRICAO PRODUTO*/
-
-/*-- LINE 1 - HISTORICO DE NAVEGAÇÃO*/
-
-.historico {
+    }
+    
+    /* DESCRICAO PRODUTO*/
+    
+    /*-- LINE 1 - HISTORICO DE NAVEGAÇÃO*/
+    
+    .historico {
     text-align: left;
     margin: 10px 50px;
     font-size: 18px;
-}
-
-/*-- LINE 2 - DESCRICAO PRODUTO*/
-.description {
-    border: lightcoral 4px solid;
+    }
+    
+    /*-- LINE 2 - DESCRICAO PRODUTO*/
+    .description {
     display: flex;
     justify-content: space-around;
-
-
-}
-
-.photo-left {
+    
+    
+    }
+    
+    .photo-left {
     display: flex;
     flex-direction: column;
-    border: #FD5523 2px solid;
-
-
-}
-
-.left {
-
+    
+    
+    }
+    
+    .left {
+    
     width: 100px;
     height: 120px;
-    border: black 3px solid;
-}
-
-.photo-principal {
-    border: #23fd35 2px solid;
+    }
+    
+    .photo-principal {
     display: flex;
     justify-content: center;
-}
-
-.description-book {
-    font-size: 23px;
-    border: black solid 5px;
+    }
+    
+    .description-book {
+    font-size: 19px;
     margin: 10px 40px;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-.author,
-.produt-name {
+    }
+    
+    .author,
+    .produt-name {
     text-align: left;
-}
-
-.author {
+    }
+    
+    .author {
     color: #818181;
-}
-
-.price-1 {
+    }
+    
+    .price-1 {
     padding-top: 20px;
     text-align: left;
-}
-
-.buy,
-.add-carrinho {
-
+    }
+    
+    .buy,
+    .add-carrinho {
+    
     border-radius: 15px;
-
-}
-
-.buy {
+    
+    }
+    
+    .buy {
     background-color: #FD5523;
     color: white;
     font-size: 16px;
     line-height: 42px;
     width: 120px;
-}
-
-.add-carrinho {
+    }
+    
+    .add-carrinho {
     background-color: #356859;
     color: white;
     font-size: 16px;
     line-height: 42px;
     width: 400px;
-}
-
-.compartilhar {
+    }
+    
+    .compartilhar {
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-/* LINE 3 - DESCRICAO PRODUTO - 2 */
-
-.details {
-    border: #23fd35 solid 3px;
-}
-
-.details-description {
+    }
+    
+    /* LINE 3 - DESCRICAO PRODUTO - 2 */
+    
+    /* .details {
+    } */
+    
+    .details-description {
     border: black 5px solid;
     display: flex;
     justify-content: space-between;
-
-}
-
-.item-details {
+    
+    }
+    
+    .item-details {
     border: 1px solid lightpink;
     padding: 2px 32px;
-}
-
-/*LINE 4 - SUGESTÃO DE LIVRO */
-
-.box-sugestao {
-    border: yellowgreen 3px solid;
+    }
+    
+    /*LINE 4 - SUGESTÃO DE LIVRO */
+    
+    .box-sugestao {
     background-color: white;
     display: flex;
     justify-content: center;
     padding: 40px 0px;
-
-}
-
-.box-prod {
+    
+    }
+    
+    .box-prod {
     background-color: #F5F4F4;
-    border: #FD5523 3px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-
-.box-like {
+    
+    }
+    
+    .box-like {
     font-size: 26px;
     margin: 0 50px;
     padding: 30px 0;
-
-}
-
-
-/* FIM */
-
-/* PAG NEWSLETTER - FORM */
-
-/* FORM*/
-.box-newsletter {
+    
+    }
+    
+    
+    /* FIM */
+    
+    /* PAG NEWSLETTER - FORM */
+    
+    /* FORM*/
+    .box-newsletter {
     display: flex;
     border: lightgrey 1px solid;
     flex-direction: column;
     align-items: center;
-}
-
-.titulo {
+    }
+    
+    .titulo {
     font-size: 42px;
     margin-bottom: 30px;
     margin-top: 10px;
-
-}
-
-.dados-newsletter {
-
+    
+    }
+    
+    .dados-newsletter {
+    
     display: flex;
     border: lightgray 1px solid;
     background-color: #ffffff;
     justify-content: center;
     padding: 40px 40px;
     margin-bottom: 40px;
-}
-
-.input-padrao {
+    }
+    
+    .input-padrao {
     width: 40px;
     margin-bottom: 20px;
-}
-
-.input-email {
+    }
+    
+    .input-email {
     width: 300px;
     height: 30px;
     margin-bottom: 20px;
-}
-
-.btn-cadastrar {
+    }
+    
+    .btn-cadastrar {
     display: flex;
     justify-content: center;
     background-color: #37966F;
@@ -506,14 +513,14 @@ section {
     margin: 10px 10px;
     padding: 10px 10px;
     width: 180px;
-}
-
-/* FIM */
-
-/* PAGIINA LOGIN */
-
-/* FORM LOGIN - LINE 1*/
-.box-login {
+    }
+    
+    /* FIM */
+    
+    /* PAGIINA LOGIN */
+    
+    /* FORM LOGIN - LINE 1*/
+    .box-login {
     display: flex;
     border: lightgrey 1px solid;
     flex-direction: column;
@@ -521,61 +528,61 @@ section {
     align-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-}
-
-.login {
-
+    }
+    
+    .login {
+    
     display: flex;
     border: lightgray 1px solid;
     background-color: #ffffff;
     justify-content: center;
     padding: 40px 40px;
     margin-bottom: 40px;
-}
-
-.titulo-form {
+    }
+    
+    .titulo-form {
     font-size: 22px;
-}
-
-.input-text {
+    }
+    
+    .input-text {
     font-size: 22px;
-}
-
-.input-email {
+    }
+    
+    .input-email {
     width: 300px;
     height: 30px;
     margin-bottom: 20px;
     font-size: 14px;
-}
-
-.btn-entrar {
+    }
+    
+    .btn-entrar {
     background-color: #37966F;
     color: #ffffff;
     margin: 10px 10px;
     padding: 10px 10px;
     width: 250px;
-}
-
-.input-esqueceu-1 {
-
+    }
+    
+    .input-esqueceu-1 {
+    
     font-size: 17px;
     font-style: oblique;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
-
-}
-
-/* FORM CADASTRE-SE - LINE 2*/
-
-.input-esqueceu {
+    
+    }
+    
+    /* FORM CADASTRE-SE - LINE 2*/
+    
+    .input-esqueceu {
     font-size: 22px;
     font-style: initial;
     text-align: center;
     margin-top: 20px;
-}
-
-.btn-cadastre-se {
+    }
+    
+    .btn-cadastre-se {
     display: flex;
     justify-content: center;
     border-radius: 15px;
@@ -584,159 +591,170 @@ section {
     margin: 10px 10px;
     padding: 10px 10px;
     width: 250px;
-
-}
-
-/* FIM */
-
-/* FOOTER */
-
-footer {
-	background-color: #37966F;
-	padding: 2em 0;
-	padding-bottom: 0px;
-	border-top: 5px solid #FFF;
-}
-
-footer h2, footer p, footer a, footer span, h5 {
-	color: #FFF;
-}
-
-footer h2 {
-	font-weight: 400;
-}
-
-footer a {
-	text-decoration: none;
-}
-
-footer ul {
-	padding: 0;
-}
-
-footer li {
-	list-style: none;
-}
-.footer-box0 {
-	width: 20%;
-	padding: 2%;
-	float: left;
-	margin-left: 1px;
-}
-
-.footer-box1 {
-	width: 20.5%;
-	padding: -3%;
-	float: left;
-}
-
-.footer-box2 {
-	width: 20%;
-	padding: -3%;
-	float: left;
-}
-
-.footer-box3 {
-	width: 22.5%;
-	padding: -3%;
-	float: left;
-}
-
-footer .wrapper:after {
-	clear: both;
-	content: "";
-	display: block;
-}
-
-.company-footer {
-	width: 80%;
-}
-
-.company-footer h2 {
-	margin-top: 20px;
-}
-
-.company-footer h2, .company-footer p {
-	margin-bottom: 10px;
-}
-
-.footer-list li {
-	margin-bottom: 15px;
-}
-
-.footer-list a {
-	transition: 0.5s;
-}
-
-.footer-list a:hover {
-	color: #356859;
-}
-
-.footer-list li:after {
-	clear: both;
-	content: "";
-	display: block;
-}
-
-.articles-footer {
-	width: 60%;
-}
-
-.footer-list.footer-article-list span {
-	display: block;
-	float: none;
-}
-
-.footer-list li span {
-	float: left;
-	height: 30px;
-	line-height: 30px;
-}
-
-.footer-bottom {
-	background-color: #FFF;
-
-}
-
-.footer-bottom p {
-	font-weight: 600;
-	margin-top: 0px;
+    
+    }
+    
+    /* FIM */
+    
+    /* LINE CONTATO - 6X / ENTREGAMOS BRASIL*/
+    
+    .line-promocao{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 30px 30px;
+    font-size: 26px;
+    font-family: roboto;
+    font-weight: bolder;
+    }
+    
+    /* FIM */
+    
+    
+    /* FOOTER */
+    
+    footer {
+    background-color: #37966F;
+    padding: 2em 0;
+    padding-bottom: 10px;
+    
+    }
+    
+    footer h2, footer p, footer a, footer span, h5 {
+    color: #FFF;
+    }
+    
+    footer h2 {
+    font-weight: 400;
+    }
+    
+    footer a {
+    text-decoration: none;
+    }
+    
+    footer ul {
+    padding: 0;
+    }
+    
+    footer li {
+    list-style: none;
+    }
+    .footer-box0 {
+    width: 20%;
+    padding: 2%;
+    float: left;
+    margin-left: 1px;
+    }
+    
+    .footer-box1 {
+    width: 20.5%;
+    padding: -3%;
+    float: left;
+    }
+    
+    .footer-box2 {
+    width: 20%;
+    padding: -3%;
+    float: left;
+    }
+    
+    .footer-box3 {
+    width: 22.5%;
+    padding: -3%;
+    float: left;
+    }
+    
+    footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+    }
+    
+    .company-footer {
+    width: 80%;
+    }
+    
+    .company-footer h2 {
+    margin-top: 20px;
+    }
+    
+    .company-footer h2, .company-footer p {
+    margin-bottom: 10px;
+    }
+    
+    .footer-list li {
+    margin-bottom: 15px;
+    }
+    
+    .footer-list a {
+    transition: 0.5s;
+    }
+    
+    .footer-list a:hover {
+    color: #356859;
+    }
+    
+    .footer-list li:after {
+    clear: both;
+    content: "";
+    display: block;
+    }
+    
+    .articles-footer {
+    width: 60%;
+    }
+    
+    .footer-list.footer-article-list span {
+    display: block;
+    float: none;
+    }
+    
+    .footer-list li span {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    }
+    
+    .footer-bottom {
+    background-color: #FFF;
+    
+    }
+    
+    .footer-bottom p {
+    font-weight: 600;
+    margin-top: 0px;
     background-color: #356859;
     color: #FFF;
     text-align:center;
     padding-top: 20px;
-
-
-}
-.line-third {
+    
+    
+    }
+    .line-third {
     background-color: #356859;
     display: flex;
     justify-content: center;
-	padding-bottom: 20px;
-	padding-top: 20px;
-}
-
-
-
-/*Menu Vertical - Dropdown (Teste)*/
-/*Toda a Página*/
-*{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    }
+    
+    /*
+    Menu Vertical - Dropdown (Teste)
+    /*Toda a Página
+    *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /*Corpo*/
-  body{
+    }
+    /*Corpo
+    body{
     min-height: 100vh;
     background: #356859;
-    
-  }
-  
-  /*Barra vertical (Menu onde está o "x". Barra onde está os nomes (CATEGORIAS ATÉ QUEM SOMOS*/
-  .side-bar{
-    background: rgba(255, 255, 255, 0.1);
+    }
+    /*Barra vertical (Menu onde está o "x". Barra onde está os nomes (CATEGORIAS ATÉ QUEM SOMOS
+    .side-bar{
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter:blur(15px);
     width: 290px;
     height: 100vh;
@@ -746,74 +764,70 @@ footer .wrapper:after {
     overflow-y: auto;
     transition: 0.6s ease;
     transition-property: right;
-  }
-  
-  /*Menu vertical - deslocamento*/
-  .side-bar.active{
+    }
+    /*Menu vertical - deslocamento
+    .side-bar.active{
     left: 0;
-  }
-  /*Altera a distancias - Elementos Menu Vertical*/
-  .side-bar .menu{
+    }
+    /*Altera a distancias - Elementos Menu Vertical
+    .side-bar .menu{
     width: 100%;
     margin-top: 80px;
-  }
-  /*Quando você acessa a área do Menu Vertical - Transforma a seta em "mãozinha"*/
-  .side-bar .menu .item{
+    }
+    /*Quando você acessa a área do Menu Vertical - Transforma a seta em "mãozinha"
+    .side-bar .menu .item{
     position:relative;
     cursor:pointer;
-  }
-  /*Itens do Menu Vertical - Por exeplo cor da letra!*/
-  .side-bar .menu .item a{
+    }
+    /*Itens do Menu Vertical - Por exeplo cor da letra!
+    .side-bar .menu .item a{
     color: #fff;
     font-size: 16px;
     text-decoration: none;
     display: block;
     padding: 5px 30px;
     line-height: 60px;
-  }
-  /*Ao passar o "cursor" nos itens do Menu Vertical*/
-  .side-bar .menu .item a:hover{
+    }
+    /*Ao passar o "cursor" nos itens do Menu Vertical
+    .side-bar .menu .item a:hover{
     background: #356859;
     transition: 0.3s ease;
-  
-  }
-  
-  /*"Regula a posição" da seta no Menu Vertical*/
-  .side-bar .menu .item a .dropdown{
-  
+    }
+    /*"Regula a posição" da seta no Menu Vertical
+    .side-bar .menu .item a .dropdown{
     position: absolute;
     right:0;
     margin: 20px;
     transition: 0.3s ease;
-  }
-  /*Sub-menu do Menu Vertical*/
-  .side-bar .menu .item .sub-menu{
+    }
+    /*Sub-menu do Menu Vertical
+    .side-bar .menu .item .sub-menu{
     background: rgba(158, 118, 121, 0.1);
     display:none;
-  }
-  /*Posicionamento do item Sub-menu*/
-  .side-bar .menu .item .sub-menu a{
+    }
+    /*Posicionamento do item Sub-menu
+    .side-bar .menu .item .sub-menu a{
     padding-left: 80px;
-  }
-  /* O quanto a seta do Menu Vertical tem que girar para "Baixo" ao acessar o Sub-menu*/
-  .rotate{
+    }
+    /* O quanto a seta do Menu Vertical tem que girar para "Baixo" ao acessar o Sub-menu
+    .rotate{
     transform: rotate(90deg);
-  }
-  /*Posicionamento do Botão "X"*/
-  .close-btn{
+    }
+    /*Posicionamento do Botão "X"
+    .close-btn{
     position: absolute;
     color: #fff;
     font-size: 20px;
     right: 0;
     margin: 25px;
     cursor: pointer;
-  }
-  
-  /*Posicionamento do Botão Hamburguer*/
-  .menu-btn{
+    } 
+    Posicionamento do Botão Hamburguer
+    .menu-btn{
     position: absolute;
     color: #fff;
     font-size: 20px;
     margin: 25px;
     cursor:pointer;
-  }
+    }
+    */
