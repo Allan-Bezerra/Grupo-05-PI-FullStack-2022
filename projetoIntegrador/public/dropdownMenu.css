@@ -1,0 +1,54 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.dp-img{
+    width: 40px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+.dp-nav{
+    background-color: #37966F;
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+
+}
+
+.dp-link{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+.dp-link:hover{
+    background-color: #356859;
+    color: white;
+    font-weight: bold;
+}
+
+.dp-label{
+    
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.dp-ul{
+    
+    top:70px;
+    position: absolute;
+    width: 100%;
+
+}
+.dp-input[type="checkbox"]:checked ~ .dp-nav{
+    transform: translateX(350px);
+}
