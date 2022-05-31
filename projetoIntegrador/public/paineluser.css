@@ -1,0 +1,13 @@
+.menu-central-user{
+    display: flex;
+}
+
+.painel-user-esqueda{
+    display: flex;
+    align-items: flex-start;
+    background-color: lightcoral;
+}
+
+.painel-user-central{
+    background-color: lightgray;
+}
