@@ -1,0 +1,10 @@
+#menu-central-text, #menu-esquerda-text {
+    display: flex;
+    font-size: 18px;
+    gap: 50px
+    }
+    
+    .social-media, .hamb-menu {
+    display: flex;
+    gap: 20px;
+    }
